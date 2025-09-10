@@ -36,7 +36,21 @@ export default [
   {
     languageOptions: {
       globals: {
+        // Browser globals
+        window: "readonly",
         document: "readonly",
+        navigator: "readonly",
+        location: "readonly",
+        CustomEvent: "readonly",
+        localStorage: "readonly",
+        alert: "readonly",
+        confirm: "readonly",
+        queueMicrotask: "readonly",
+        // timers
+        setTimeout: "readonly",
+        clearTimeout: "readonly",
+        // Console
+        console: "readonly",
       },
     },
   },
